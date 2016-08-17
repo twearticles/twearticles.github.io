@@ -1,0 +1,140 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Raspberry Pi Setup</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-red.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+   <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+	<a href="../index.html"><img src="images/backArrow1.png"></a>
+		<div class="mdl-layout-spacer"></div>
+      
+          <span class="mdl-layout-title">Raspberry Pi Setup</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <a href="../../search/index.html"><input class="mdl-textfield__input" type="text" id="search"></a>
+              
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+ <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+             <a href="../../homepage/index.html">TWE Articles</a> &gt; <a href="../index.html">Raspberry Pi</a> &gt; Raspberry Pi Setup
+            </div>
+<h1>
+					Raspberry Pi Setup
+				</h1>
+			
+			<p>
+				The Raspberry Pi is a tiny $35 computer. It is sold without any components, just a simple circuitboard. One would expect that such a cheap computer would be second rate. On the contrary, it provides more than enough power. Because of its tiny size, it can be used for many different projects, such as a personal server or a robotics project. Here we'll outline setting one up and a few things to do with it.
+			</p>
+			<h3>
+				Collecting the materials
+			</h3>
+			<p>
+				For starters, check out the <a href="http://www.raspberrypi.org"> Raspberry Pi web site</a> They have some great documentation to get you familiar with the concept. The model of Raspberry is up to you, but I would highly suggest the latest Raspberry Pi 3 because it has much more capabilites than the previous models and it has built-in wifi. That in itself is a huge plus. Once you've ordered a Pi from one of their vendors, you need to consider its accessories. It will need some sort of a power cord. The Pi's official charger is Micro USB. (For information about the differences between micro and mini usb, check <a href="http://visual.ly/micro-usb-vs-mini-usb"b>here</a>) You will definitely want a high-quality cord that is capable of outputting at least 5 volts and 2 amps. I would suggest the offical <a href="https://www.raspberrypi.org/products/universal-power-supply/">Raspberry pi cord</a>. The other thing you will want to consider is a miniSD card. Since the Raspberry Pi won't boot without one, this is something you will want to seriously consider. When I went to buy an card, I went for the biggest one I could find, a $5 64GB miniSD card from a random seller on eBay. What I quickly found was that there are differences between cards. Eventually, I had to buy an 8GB preloaded SD card from adafruit.com. One thing to beware of when buying preloaded card, however, is that only Raspbian Jessie (the latest version) will work in the Raspberry Pi 3. Raspbian Wheezy will not.</p> 
+				<p>There are a few optional items that you may want. They are an HDMI cable and a TV or HDMI monitor. If you plan on running your Pi as a server, these are unnecessary. However, if you want a media center, you will definitely want to take time planning out these things, as well as a USB mouse and keyboard.. If you do decide to go without the display, you can still access your Pi's screen through SSH and VNC, which we will explain later. One other thing you will need is an internet connection either directly to your router with an ethernet cable, or via wifi. If you choose to use wifi, you will need a monitor and HDMI cable to set it up. If you have a wired connection to your router, the monitor is unnecessary. For the purpose of this tutorial, I'll assume you are choosing to connect headlessly, or without a monitor.<br>
+			</p>
+			<h3>
+				Plugging things in
+			</h3>
+			<p>
+				Once you have all the materials, it is time to start hooking things up. Start by placing the miniSD card into the small reader on the under-side of the Pi, then plug in the ethernet cable. Finally, plug the power cable into the port on the Pi and plug the other end into the outlet. At about this time you should see a couple lights on the Pi, namely a red and a green one. The green one should be blinking; it indicates SD card activity. The red one should not; it indicates that there is power to the Pi.
+			</p>
+			<h3>
+				SSH
+			</h3>
+			<p>
+				The first thing you will have to do is to connect to the Pi via SSH. To do you need to access your router's setup page. To accomplish that, I would highly recommend <a href="http://howtogeek.com/233952/how-to-find-your-routers-ip-address-on-any-computer-smartphone-or-tablet/">this guide from How-To Geek</a>. If you absolutely cannot access your router's setup page, try the <a href="angryip.org">AngryIP scanner</a>.<br>
+			</p> <b>Windows</b>
+			<p>
+				If you have Windows, you will need to download <a href="putty.org">PuTTY</a>, a free download that will enable you to access your Raspberry Pi's terminal from your Windows PC. When it finishes downloading, open the exeecutable. Enter your Pi's IP address into the "Host name" bar and click "Open."
+			</p> <b>Macintosh</b>
+			<p>
+				Open the Terminal from the Apple menu. Then, at the prompt, type, <p><pre>ssh pi@your_Pi's_IP_address</pre></p>
+			</p> <b>Linux</b>
+			<p>
+				The instructions for Linux are very similar to the Macintosh instructions. Simply open the Terminal (usually located under "System" or "Accessories") and type <p><pre>ssh pi@your_Pi's_IP_address</pre></p>
+			</p> <b>Android</b>
+			<p>
+				In the Google Play Store, search for "JuiceSSH." Install and open it. Once it is open, tap "Connections." Hit the yellow + sign in the lower right-hand corner. Type a name for the connection in the top field (I chose "raspi"). Then type your Pi's IP address in the "Address" field. In the "Identity" field hit "New," then type another name in the top field. Type "pi" in the "Username" field. Then tap the checkmark in the top right corner. Finally, tap the checkmark icon in the upper-right corner to finish making the connection. At this stage, you can hit "All" and then hit "raspi" and it will connect.<br>
+			</p>
+			<h3>
+				Updating the Raspberry Pi
+			</h3>
+			<p>
+				If it asks you for login credentials; the username is "pi" and the password is "raspberry." Once you're logged in, you will first want to type</p> <p><pre>sudo raspi-config</pre></p> <p>Select the first option, "Expand the Filesystem." When that has finished, you will want to select the second option, "Change User Password." It will ask you to type your new password twice. Once it is complete, select "Finish." Let it restart your Pi. When it restarts, you will lose your SSH connection to it. Wait about 30 seconds and then try to reconnect to it. When you get connected, log on, then type</p><p><pre>sudo apt-get update</pre></p><p> and </p><p><pre>sudo apt-get upgrade</pre></p> <p>Once that is complete, you have a fully working Raspberry Pi. You can now proceed to start a project. 
+		</div>
+	</div>
+
+      </main>
+    </div>
+  </body>
+</html>

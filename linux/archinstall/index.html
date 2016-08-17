@@ -1,0 +1,270 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Arch Linux Installation</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-red.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+   <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+	<a href="../index.html"><img src="images/backArrow1.png"></a>
+		<div class="mdl-layout-spacer"></div>
+      
+          <span class="mdl-layout-title">Arch Linux Installation</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <a href="../../search/index.html"><input class="mdl-textfield__input" type="text" id="search"></a>
+              
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+ <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+             <a href="../../homepage/index.html">TWE Articles</a> &gt; <a href="../index.html">Linux</a> &gt; How to Install Arch Linux
+            </div>
+           <h2>
+					Why Arch Linux?
+				</h2>
+				<p>
+					Why would someone want to wrestle with Arch Linux when there are tons of more user-friendly operating systems out there? The reason lies in the simplicity of Arch. In Ubuntu, for example, there are many programs and services that you don't know about and never use. They are simply taking up memory on your computer. In Arch, you know exactly what is going into your computer and when it breaks, you know exactly how to fix it. Does that sound fun? Read on.
+				</p>
+			
+
+			<div class="page-header">
+				<h1>
+					Arch Linux Installation
+				</h1>
+			</div> <span class="label label-default">Requirements</span>
+			<ul>
+				<li>
+					Computer with minimum 10 GB free space
+				</li>
+				<li>
+					Direct internet connection (Ethernet)
+				</li>
+				<li>
+					2GB or more flash drive
+				</li>
+				<li>
+					Basic Linux Skills
+				</li>
+				<li>
+					Ability to Learn
+				</li>
+				<li>
+					A weekend
+				</li>
+			</ul>
+			<h3>
+				Step 1: Get an Arch Linux Installation CD
+			</h3>
+			<p>
+				To start, download the Arch Linux installation image from the <a href="https://www.archlinux.org/download/">Arch Linux download page</a>. Scroll down to your country and select one of the download mirrors. When it is finished downloading, write it to a flash drive using <a href="http://www.pendrivelinux.com/yumi-multiboot-usb-creator/">YUMI</a>.
+			</p>
+			
+			<h3>
+				Step 2: Partition Hard Disk Drives
+			</h3>
+			<p>
+				Reboot the computer that you want Arch Linux on. If it doesn't automatically boot to a screen that says YUMI on it, Google how to boot to USB on your specific computer. Once you can see the YUMI screen, use the arrow keys to highlight "System Tools." Press <kbd>Enter</kbd>. Highlight "boot-repair-disk" and press <kbd>Enter</kbd>. The computer should start to boot into Boot Repair Disk. Once you see the desktop, open the menu, go to "System Tools" and select either "Partition Editor" or "GParted." You will want to create two partitions, one for the system files and another for your home folder. Make sure to remember their names (e.g. <code>/dev/sda1</code>).
+			</p>
+			<h3>
+				Step 3: Mount your partitions
+			</h3>
+			<p>
+				First of all, plug your ethernet cable into your router and into your computer. Then restart your computer again. Use the same procedure as before to get to the YUMI boot screen. Once there, select "Linux Distributions." Then select Arch Linux. After several seconds of words scrolling past, you should see a command prompt. Type <pre>ping -c 3 google.com</pre> If you see an error message, you will need to check out <a href="https://wiki.archlinux.org/index.php/Network_configuration">how to setup your network manually</a>. Otherwise, keep going.<br>Now, you need to mount the two partitions you just created.<p><pre>mount /dev/sda1 /mnt <br>mkdir /mnt/home <br>mount /dev/sda2 /mnt/home</pre></p> <br>For the purposes of this tutorial, we are assuming that the partition for the system files is <code>/dev/sda1</code> and the partition for your files is <code>/dev/sda2</code>.
+			</p>
+			<h3>
+				Step 4: Installing Arch Base
+			</h3>
+			<p>
+				Before you can install packages, you need to select a package mirror. Type: <pre>nano /etc/pacman.d/mirrorlist</pre> Using the arrow keys, scroll down to a mirror in your country, press <kbd>Alt+6</kbd> to copy the line. Scroll back to the top of the file and press <kbd>Ctrl+U</kbd> to paste it. Finally, press <kbd>Ctrl+X</kbd> to exit the file, followed by <kbd>Y</kbd> and <kbd>Enter</kbd>.<br>Now, to install the base system, type:<pre>pacstrap -i /mnt base</pre>
+			</p>
+			<h3>
+				Step 5: Internationalization Settings
+			</h3>
+			<p>
+				Now we will begin changing settings on our new system. First type:<pre>arch-chroot /mnt</pre><br>Basically, with this command we will start running commands on our new system without booting it yet.<br>Now, set the timezone setting with<pre>nano /etc/locale.gen</pre>Scroll down to your timezone (US users would want the <code> en_US.UTF-8 UTF-8</code> line). Delete the # in front of it to uncomment it. Don't forget to save the file! <p>Now type:<code>locale-gen</code><p>One other thing you would want to do is create a <code>locale.conf</code> file. Type: (replacing <code>en_US.UTF-8</code> with your timezone) <pre>echo LANG=en_US.UTF-8 &gt; /etc/locale.conf<br>export LANG=en_US.UTF-8</pre><br>To change your timezone, type<br><pre>ls /usr/share/zoneinfo</pre><br>View subzones by picking a category (e.g. <code>America</code>) and typing:<pre>ls /usr/share/zoneinfo/America</pre><br>Finally, type this (making sure to replace <code>America/El_Salvador</code> with your timezone)<pre>ln -s /usr/share/zoneinfo/America/El_Salvador /etc/localtime</pre><br>Now set the clock:<pre>hwclock --systohc --utc</pre>
+			</p>
+			<h3>
+				Step 6: Set up your network
+			</h3>
+			<p>
+				We've already set up network access from the Live CD, but now we need to set up the networking for our new operating system.
+			</p> <span class="label label-default">For Wired Connection</span>
+			<p>
+				Type:<pre>ip link</pre>You should see two entries, one named <code>lo</code> and another one. That second one is your interface name.<br>Now type (replacing <code>interfacename</code> with your interface name:<pre>systemctl enable dhcpcd@<i>interfacename</i>.service</pre>
+			</p> <span class="label label-default">For Wireless Connection</span>
+			<p>
+				First of all, install the wireless tools with:<pre>pacman -S wireless_tools wpa_supplicant wpa_actiond dialog</pre>Then, run:<pre>wifi-menu</pre><br>Follow the prompts.<br>Finally, enable the service with:<pre>systemctl enable net-auto-wireless.service</pre>Stay connected to your ethernet cable until you have finished installing Arch
+			</p>
+			<h3>
+				Step 7: Configure Pacman
+			</h3>
+			<p>
+				This step is only necessary on 64-bit computers. If your computer is 32-bit, you can skip to step 9.<br>Type:<pre>nano /etc/pacman.conf</pre><br>At the bottom of the file, type these lines: <pre>[multilib]<br>Include = /etc/pacman.d/mirrorlist</pre><br>Press <kbd>Ctrl + X</kbd> and <kbd>Y</kbd> to save.<br>
+			</p>
+			<h3>
+				Step 8: User accounts
+			</h3>
+			<p>
+				First, we need to set a root password with <pre>passwd</pre>Follow the prompts.<br>Next, we need to make a user account. Replace <code>dummyUser</code> with your username.<pre>useradd -m -g users -G wheel,storage,power -s /bin/bash dummyUser<br>passwd dummyUser</pre><br>Now, install "sudo," a convenient application that allows us to run commands as root from non-root user accounts.<pre>pacman -S sudo</pre><br>Now, to make "sudo" work, we need to edit the sudoers file:<pre>EDITOR=nano visudo</pre>Uncomment this line:<pre>%wheel ALL=(ALL) ALL</pre>Save the document.
+			</p>
+			<h3>
+				Step 9: Grub
+			</h3>
+			<p>
+				When you turn your computer on, something called a bootloader is what starts the operating system. Grub is a bootloader. To install Grub, run:<pre>pacman -S grub-bios<br>grub-install --target=i386-pc --recheck /dev/sda<br>cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo</pre>Dual-booters should run:<pre>pacman -S os-prober</pre>And everyone should run:<pre>grub-mkconfig -o /boot/grub/grub.cfg</pre>Now, exit and reboot the computer:<pre>exit<br>umount /mnt/home<br>umount /mnt<br>reboot</pre>
+			</p>
+			<h3>
+				Step 10: Final Touches
+			</h3>
+			<p>
+				Now comes the fun part! We are now running our own Arch Linux Installation! First, sign in with the same login credentials you created earlier.<br>Now, we want to enable sound, so install <code>alsa-utils</code> using pacman.<pre>sudo pacman -S alsa-utils<br>alsamixer</pre>Use the <kbd>M</kbd> key to unmute the channels you need. Then press the <kbd>Up</kbd> arrow key until the <code>dB gain</code> equals 0. Press <kbd>Esc</kbd> when you're down.<br>To test your speaker setup, run:<pre>speaker-test -c 2</pre>.Be sure to change <code>2</code> to however many speakers you have. To stop the test, press <kbd>Ctrl+C</kbd>.<br>Now we need to set up graphics.<pre>sudo pacman -S xorg-server xorg-xinit xorg-server-utils mesa</pre>Next we should install video drivers. If you are using a Windows PC that says "Intel Inside" somewhere on the case, you could probably get away with simply typing:<pre>sudo pacman -S xf86-video-intel</pre>Otherwise, check out this <a href="https://wiki.archlinux.org/index.php/xorg#Driver_installation">chart</a> for more information.<br>If you are on a laptop also run:<pre>sudo pacman -S xf86-input-synaptics</pre>Now it's time to test out our graphics.<br>First, install:<pre>sudo pacman -S xorg-twm xorg-xclock xterm</pre>To test X, run:<pre>startx</pre>If all is well, a few basic windows should appear on your screen. If not, try typing:<pre>sudo startx</pre> Type <pre>exit</pre> followed by <kbd>Enter</kbd> to get back to the terminal.<br>Finally, simply install a few fonts:<pre>sudo pacman -S ttf-dejavu</pre>Now choose a desktop environment. Now simply install the package associated with that environment (e.g. <code>budgie-desktop</code>) with <code>pacman</code>.<br>
+			</p>
+
+			<center>
+				<table class="mdl-data-table mdl-js-data-table">
+				<thead>
+					<tr>
+						
+						<th>
+							Desktop
+						</th>
+						<th>
+							Package to Install
+						</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						
+						<td>
+							<a href="https://wiki.archlinux.org/index.php/LXDE">LXDE</a>
+						</td>
+						<td>
+							lxde
+						</td>
+						
+					</tr>
+					<tr class="active">
+						
+						<td>
+							<a href="https://wiki.archlinux.org/index.php/GNOME">Gnome</a>
+						</td>
+						<td>
+							gnome
+						</td>
+						
+					</tr>
+					<tr class="success">
+						
+						<td>
+							<a href="https://wiki.archlinux.org/index.php/KDE>KDE</a>
+						</td>
+						<td>
+							plasma
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+							<a href="https://wiki.archlinux.org/index.php/Budgie_Desktop">Budgie</a>
+						</td>
+						<td>
+							budgie-desktop
+						</td>
+						
+					</tr>
+					<tr class="success">
+						
+						<td>
+							<a href="https://wiki.archlinux.org/index.php/Cinnamon">Cinnamon</a>
+						</td>
+						<td>
+							cinnamon
+						</td>
+						
+					</tr>
+				</tbody>
+			</table>
+		</center>
+			<p>
+				Congratulations! You made it! Now you have your own working Arch Linux system. You have also gotten a good understanding of Linux. However, there is much more to learn, so be sure to check out the Arch Linux wiki. <center><h2>Have fun!</h2></center>
+			</p>
+		</div>
+	</div>
+
+      </main>
+    </div>
+  </body>
+</html>
